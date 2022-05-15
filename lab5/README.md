@@ -1,0 +1,1 @@
+https://liubomyr-kozak.github.io/KPI-WEB-LAB/lab5/index.html

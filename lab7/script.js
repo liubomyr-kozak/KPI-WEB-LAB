@@ -67,8 +67,3 @@ document
       renderUsers(users.list)
     })
   })
-
-
-fetchUsers(paginator).then(users => {
-  renderUsers(users.list)
-})
