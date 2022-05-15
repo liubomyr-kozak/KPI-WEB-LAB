@@ -1,0 +1,112 @@
+body {
+    min-height: 10vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 30px;
+    margin: 0;
+}
+
+.container {
+    margin: calc(50px - 35px) 50px 50px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+}
+
+.header {
+    background-color: #70a7de;
+}
+
+.text {
+    background-color: #93b071;
+}
+
+.image {
+    background-color: #bbe68b;
+}
+
+.footer {
+    background-color: #fac0f6;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+label:hover {
+    cursor: pointer;
+    padding: 0 10px;
+    background: rgba(232, 55, 55, 0.23);
+}
+
+input[type="radio"]:checked + label {
+    background: #e83737;
+    color: #fff;
+    border-color: #e83737;
+}
+
+/* =================================================== */
+/*                   float-container                    */
+/* =================================================== */
+
+#float-container:checked ~ .container .header {
+    height: calc(100% / 5);
+}
+
+#float-container:checked ~ .container .content {
+    height: calc(100% / 1.66666666);
+}
+
+#float-container:checked ~ .container .text {
+    width: auto;
+    height: 100%;
+
+}
+
+#float-container:checked ~ .container .image {
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+
+#float-container:checked ~ .container .footer {
+    height: calc(100% / 5);
+}
+
+/* =================================================== */
+/*                    flex-container                    */
+/* =================================================== */
+
+#flex-container:checked ~ .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-container:checked ~ .container .header {
+    flex-grow: 1;
+}
+
+#flex-container:checked ~ .container .content {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#flex-container:checked ~ .container .text {
+    flex-grow: 1;
+}
+
+#flex-container:checked ~ .container .image {
+    flex-grow: 3;
+}
+
+#flex-container:checked ~ .container .footer {
+    flex-grow: 1;
+}

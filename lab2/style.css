@@ -1,0 +1,95 @@
+:root{
+    --clock-number-size: 15px;
+    --clock-number-color: red;
+    --clock-arrow-color: #000;
+}
+
+.clock {
+    position: relative;
+    border: 1px solid;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    background: rgba(255, 0, 0, 0.17);
+}
+.clock-arrow{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    height: 1px;
+    width: 1px;
+}
+
+.clock-arrow-minute {
+    height: 5px;
+    width: 85px;
+    background-color: var(--clock-arrow-color);
+    transform-origin: left center;
+    transform: rotate(270deg);
+    position: absolute;
+}
+
+.clock-arrow-minute::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 21px;
+    left: -20px;
+    background-color: var(--clock-arrow-color);
+    position: absolute;
+}
+
+
+.clock-arrow-hour {
+    height: 5px;
+    width: 65px;
+    background-color: var(--clock-arrow-color);
+    transform-origin: left center;
+    transform: rotate(360deg);
+    position: absolute;
+}
+
+.clock-arrow-hour::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 21px;
+    left: -20px;
+    background-color: var(--clock-arrow-color);
+    position: absolute;
+}
+
+/* clock-number style */
+.clock-number-12,
+.clock-number-9,
+.clock-number-6,
+.clock-number-3 {
+    height: var(--clock-number-size);
+    width: var(--clock-number-size);
+    position: absolute;
+    background: var(--clock-number-color);
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.clock-number-12{
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.clock-number-9{
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+.clock-number-6{
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+.clock-number-3{
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}

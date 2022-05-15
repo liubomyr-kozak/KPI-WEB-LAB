@@ -1,0 +1,21 @@
+.color-red {
+    background-color: red;
+    color: #fff;
+}
+
+.color-blue {
+    background-color: blue;
+    color: #fff;
+}
+
+.image-container {
+    width: 800px;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}

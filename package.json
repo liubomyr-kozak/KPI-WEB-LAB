@@ -1,0 +1,22 @@
+{
+  "name": "kpi-web-lab",
+  "version": "1.0.0",
+  "description": "**Студент** Козак Любомир Миколайович **група:** ЗП-ЗПІ-01",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liubomyr-kozak/KPI-WEB-LAB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liubomyr-kozak/KPI-WEB-LAB/issues"
+  },
+  "homepage": "https://github.com/liubomyr-kozak/KPI-WEB-LAB#readme",
+  "dependencies": {
+    "sass": "^1.50.1"
+  }
+}

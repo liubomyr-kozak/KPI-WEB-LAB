@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Козак Л.М., ЗПІ-ЗП01, Lab 6, Варіант 7</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lab 6"/>
+    <meta name="keywords" content="Козак, КПІ, WEB, Lab 6"/>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form name="form" id="form" class="card">
+    <fieldset>
+        <legend>Форма для заповнення</legend>
+        <input type="text" name="name" placeholder="Призвище І.Б"/>
+        <input type="text" name="variant" placeholder="Варіант"/>
+        <input type="text" name="phone" placeholder="(000)-111-22-33"/>
+        <input type="text" name="facultet" placeholder="Факультет"/>
+        <input type="text" name="address" placeholder="Адреса"/>
+    </fieldset>
+
+    <div class="btn-from-group">
+        <input type="submit" class="btn-from" value="Відправити"/>
+        <input type="button" class="btn-from" name="fillForm" value="Заповнити DEMO форму"/>
+    </div>
+</form>
+
+<div id="result-popup">
+    <div class="result-popup-bg"></div>
+    <div class="result-popup-container">
+        <span class="result-popup-close-btn">&times;</span>
+        <div class="name"><strong>Ім'я: </strong><span></span></div>
+        <div class="variant"><strong>Варіант: </strong><span></span></div>
+        <div class="phone"><strong>Телефон: </strong><span></span></div>
+        <div class="facultet"><strong>Факудьтет: </strong><span></span></div>
+        <div class="address"><strong>Адреса: </strong><span></span></div>
+    </div>
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="card">
+    <input type="color" id="color-picker" value="#34e1bd"/>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+            <td>34</td>
+            <td>35</td>
+            <td>36</td>
+        </tr>
+    </table>
+</div>
+
+<script src="./js/scriptForm.js"></script>
+<script src="./js/scriptColor.js"></script>
+</body>
+</html>

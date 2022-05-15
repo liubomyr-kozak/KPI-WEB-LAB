@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Козак Л.М., ЗПІ-ЗП01, Lab 5, Варіант 7</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lab 5"/>
+    <meta name="keywords" content="Козак, КПІ, WEB, Lab 5"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<section>
+    <p>
+        <!-- не семантично викроистовувати p > h2, більш краще буде тег section, article -->
+    <h2>Козак Любомир Миколайович</h2>
+    </p>
+
+    <p>
+        <strong>Народився:</strong>
+        <br>
+        XX місяць 198x року, м. Київ
+    </p>
+    <p>
+        <strong>Освіта:</strong>
+        <br>
+        Київська гімназія №18
+        <br>
+        КПІ ім. Ігоря Сікорського, ФІОТ
+    </p>
+</section>
+<section>
+    <h3>Хоббі</h3>
+    <ul class="color-change-list">
+        <li>навчання в КПІ</li>
+        <li>орігамі</li>
+        <li>програмування</li>
+        <li id="eight-el">активний вид відпочинку</li>
+        <li>лежання на гамаку, читаючи вірші</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Три ваших улюблених книги або фільми</h3>
+    <ol>
+        <li>книга: Шантарам</li>
+        <li>фільми: Marvel</li>
+        <li>фільм: Зелена книга</li>
+    </ol>
+</section>
+
+<section>
+    <h3>Описом самого вподобаного міста, де ви бували.</h3>
+    <p>
+        Мюнхен
+        <ul>
+            <li><strong>Маріенплац – </strong>серце Старого міста. Найулюбленіше місце прогулянок не лише туристів, але і
+                місцевих жителів. В будівлі старої Ратуші, яка неодноразову руйнувалась під час війни,сьогодні знаходиться
+                музей іграшок.
+            </li>
+            <li><strong>Нова Ратуша</strong> – відома своєю 85-ти метровою баштою із оглядовою площадкою та годинником.
+                Щодня о 17.00 під бій 43-х дзвонів показують сцени із середньовічного життя міста 32-ві фігурки майже
+                людського зросту.
+            </li>
+            <li>Та інші відомі місця: Петерскірхе, Собор Фрауенкірхе, Пінакотеки, Музей BMW, Англійський сад, Олімпійський
+                парк, Німфенбург, Зоопарк Хеллабрунн
+            </li>
+        </ul>
+    </p>
+
+    <div id="image-list">
+        <div class="image-container js-no-delete">
+            <a href="https://static.s123-cdn-static-d.com/uploads/2508332/2000_5d72f0f5965f9.png">
+                <img src="./img.png"/>
+            </a>
+        </div>
+    </div>
+
+
+    <button id="btn-add">Додати</button>
+    <button id="btn-zoom-in">Збільшити</button>
+    <button id="btn-zoom-out">Зменшити</button>
+    <button id="btn-delete">Видалити</button>
+</section>
+<script src="./script.js"></script>
+</body>
+</html>

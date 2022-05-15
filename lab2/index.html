@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Козак Л.М., ЗПІ-ЗП01, Lab 2, Варіант 7</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lab 2"/>
+    <meta name="keywords" content="Козак, КПІ, WEB, Lab 2"/>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        :root{
+            color: #000000;
+
+            --blue: #078f8f;
+            --yellow: #f5f507;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+
+        .first-row {
+            background-color: var(--blue);
+        }
+
+        .first-row:hover {
+            background-color: var(--yellow);
+        }
+
+        .second-row {
+            background-color: var(--yellow);
+        }
+        .second-row:hover {
+            background-color: var(--blue);
+        }
+    </style>
+</head>
+<body>
+<table>
+<!--    ПІБ виконавця (окремо в кожну комірку). У другому рядку записати послідовно групу, номер лабораторної роботи та номер варіанту.-->
+    <tbody>
+        <tr class="first-row">
+            <td colspan="2" rowspan="2">Козак</td>
+            <td>Любомир</td>
+            <td>Миколайович</td>
+        </tr>
+        <tr class="second-row">
+            <td>ЗП ЗПІ-01, Лаб 2</td>
+            <td>Варіант 07</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<div class="clock">
+    <div class="clock-number-12"></div>
+    <div class="clock-number-6"></div>
+    <div class="clock-number-9"></div>
+    <div class="clock-number-3"></div>
+    <div class="clock-arrow">
+        <div class="clock-arrow-hour"></div>
+        <div class="clock-arrow-minute"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
